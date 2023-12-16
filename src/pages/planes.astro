@@ -1,0 +1,593 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Plan from "../components/Plan.astro";
+import FaqItem from "../components/FaqItem.astro";
+---
+
+<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+    <section
+        class="container py-5 px-5 md:flex md:flex-wrap md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+    >
+        <article class="mb-6 lg:text-center xl:w-full xl:text-center">
+            <h1 class="text-secondd-950 uppercase">Nuestros Planes</h1>
+            <p>
+                Contamos con 2 planes que cubren a la perfección desde tu
+                necesidad más básica hasta aquello que no imaginaste pudieses
+                necesitar.
+            </p>
+        </article>
+        <Plan name="Plan Amor" pricing="0" label="Plan gratuito">
+            <ul slot="includes">
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Auto gestionable</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Cuenta regresiva</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Invitados</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Ajustes generales</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-secondd-600 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Mapa de ubicación</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-secondd-600 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Mesa de regalos</span>
+                </li>
+                <li class="py-2 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-secondd-600 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Notificaciones Push</span>
+                </li>
+            </ul>
+        </Plan>
+        <Plan
+            name="Plan Pasión"
+            pricing="2,350"
+            label="Pruébalo gratis por 15 días"
+        >
+            <ul slot="includes">
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Auto gestionable</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Cuenta regresiva</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Invitados</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Ajustes generales</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Mapa de ubicación</span>
+                </li>
+                <li class="py-2 border-b-2 border-brand2-100 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Mesa de regalos</span>
+                </li>
+                <li class="py-2 flex">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 text-primary-500 mr-1"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span>Notificaciones Push</span>
+                </li>
+            </ul>
+        </Plan>
+
+        <article
+            class="mt-5 bg-primary-100 rounded-md py-5 px-5 w-full mb-14 pb-10"
+        >
+            <h3 class="text-primary-500 uppercase mb-2">Soy Wedding Planner</h3>
+            <p class="mb-7">
+                Si eres <b>Wedding Planner</b> contamos con un plan de enfoque
+                especial para que puedas brindar un mejor servicio a través de
+                nuestra tecnología.
+            </p>
+            <a
+                href="#"
+                class="bg-primary-500 text-white py-3 px-5 rounded-md font-bold duration-300 hover:bg-primary-600 hover:shadow-xl"
+                >Solicitar Plan</a
+            >
+        </article>
+
+        <div class="w-full">
+            <h3 class="text-center uppercase mb-5">
+                Características de los Planes
+            </h3>
+
+            <table
+                class="border-secondd-200 border-2 border-solid w-full text-left mb-10"
+            >
+                <thead>
+                    <tr class="border-secondd-200 border-b-2 border-solid">
+                        <th class="py-2 px-2">Característica</th>
+                        <th
+                            class="py-2 px-2 border-secondd-200 border-l-2 border-solid text-center"
+                            >Plan Amor</th
+                        >
+                        <th
+                            class="py-2 px-2 border-secondd-200 border-l-2 border-solid text-center"
+                            >Plan Pasión</th
+                        >
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Autogestionable</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td class="py-2 px-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Cuenta regresiva</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Invitados</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Ajustes generales</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Mapa de ubicación</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-secondd-600 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Mesa de regalos</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-secondd-600 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                    <tr class="border-secondd-100 border-b-2 border-solid">
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                            >Notificaciones Push</td
+                        >
+                        <td
+                            class="py-2 px-2 border-secondd-100 border-r-2 border-solid"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-secondd-600 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                        <td>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6 text-primary-500 m-auto"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg></td
+                        >
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</Layout>

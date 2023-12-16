@@ -1,0 +1,522 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Plan from "../components/Plan.astro";
+import CardHow from "../components/CardHow.astro";
+import CardBenefit from "../components/CardBenefit.astro";
+import CardReview from "../components/CardReview.astro";
+import FaqItem from "../components/FaqItem.astro";
+---
+
+<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+	<section>
+		<section class="relative h-[400px] overflow-hidden lg:h-[550px]">
+			<div>
+				<video src="/wedding-invites.mp4" autoplay loop></video>
+			</div>
+			<div
+				class="absolute top-0 px-4 pt-10 lg:top-20 xl:w-11/12 xl:mx-auto"
+			>
+				<h1
+					class="block text-center leading-normal mb-14 text-white font-paris md:text-[3.75rem] lg:mb-1"
+				>
+					Creamos tu Invitación Digital
+				</h1>
+				<p class="text-2xl text-center pt-5 md:text-white md:text-3xl">
+					Crea, personaliza y comparte la <b>invitación digital</b>
+					 del mejor día de tu vida a través de <b>Wedding Invites</b>
+				</p>
+			</div>
+		</section>
+
+		<section
+			class="container py-5 px-5 md:flex md:flex-wrap lg:m-auto lg:justify-between lg:mt-10 xl:m-auto xl:w-11/12 xl:mt-10"
+		>
+			<article
+				class="bg-secondd-600 py-5 px-5 rounded-md mb-6 md:w-full lg:w-[32%]"
+			>
+				<h2 class="text-white uppercase mb-5">¿Invitación Digital?</h2>
+				<p class="text-xl text-white">
+					Si, los tiempos cambian y las costumbres evolucionan, crea
+					tu <b>Invitación Digital</b> dotada de características
+					únicas y compartela fácilmente con tus invitados.
+				</p>
+			</article>
+			<article class="mb-6 md:w-1/2 md:pr-2 lg:w-[32%]">
+				<h4 class="text-secondd-600 mb-2 lg:mt-7">Eco friendly</h4>
+				<p>
+					Olvida los daños ambientales por la utilización del papel y
+					tintas en los procesos de impresión tradicionales.
+				</p>
+			</article>
+			<article class="mb-10 md:w-1/2 md:pl-2 lg:w-[32%] lg:mt-7">
+				<h4 class="text-secondd-600">Gestionable</h4>
+				<p>
+					Olvidate de los costosos procesos de impresión, modifica y
+					envía tu Invitación Digital tantas veces como desees.
+				</p>
+			</article>
+		</section>
+
+		<section
+			class="container py-5 px-5 md:flex md:flex-wrap md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+		>
+			<article class="mb-6 lg:text-center xl:w-full xl:text-center">
+				<h2 class="text-secondd-950 uppercase">Nuestros Planes</h2>
+				<p>
+					Contamos con 2 planes que cubren a la perfección desde tu
+					necesidad más básica hasta aquello que no imaginaste
+					pudieses necesitar.
+				</p>
+			</article>
+			<Plan name="Plan Amor" pricing="0" label="Plan gratuito">
+				<ul slot="includes">
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Auto gestionable</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Cuenta regresiva</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Invitados</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Ajustes generales</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-secondd-600 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Mapa de ubicación</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-secondd-600 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Mesa de regalos</span>
+					</li>
+					<li class="py-2 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-secondd-600 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Notificaciones Push</span>
+					</li>
+				</ul>
+			</Plan>
+			<Plan
+				name="Plan Pasión"
+				pricing="2,350"
+				label="Pruébalo gratis por 15 días"
+			>
+				<ul slot="includes">
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Auto gestionable</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Cuenta regresiva</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Invitados</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Ajustes generales</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Mapa de ubicación</span>
+					</li>
+					<li class="py-2 border-b-2 border-brand2-100 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Mesa de regalos</span>
+					</li>
+					<li class="py-2 flex">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-primary-500 mr-1"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+							></path>
+						</svg>
+						<span>Notificaciones Push</span>
+					</li>
+				</ul>
+			</Plan>
+		</section>
+
+		<section
+			class="container py-5 px-5 md:flex md:flex-wrap md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+		>
+			<h2
+				class="block mt-5 uppercase text-secondd-950 mb-6 lg:w-full lg:text-center"
+			>
+				¿Cómo funciona?
+			</h2>
+
+			<CardHow
+				title="Crea una cuenta"
+				content="Crea una cuenta en tan solo un par de click."
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-8 h-8 mr-2 text-primary-900"
+					slot="svg-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
+					></path>
+				</svg>
+			</CardHow>
+
+			<CardHow
+				title="Elije un template"
+				content="Selecciona uno de los templates prediseñados."
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-8 h-8 mr-2 text-primary-900"
+					slot="svg-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"
+					></path>
+				</svg>
+			</CardHow>
+
+			<CardHow
+				title="Carga tu contenido"
+				content="Personaliza el contenido de tu Invitación Digital."
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-8 h-8 mr-2 text-primary-900"
+					slot="svg-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+					></path>
+				</svg>
+			</CardHow>
+
+			<CardHow
+				title="Comparte"
+				content="Tu Invitación Digital, está lista; Compartela con todos tus invitados."
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-8 h-8 text-primary-900 mr-2"
+					slot="svg-icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+					></path>
+				</svg>
+			</CardHow>
+		</section>
+
+		<section
+			class="container py-5 px-5 mt-10 mb-10 lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+		>
+			<article class="md:flex md:flex-wrap md:justify-between">
+				<h2 class="text-secondd-950 mb-5 lg:w-full lg:text-center">
+					Beneficios de la Invitación Digital
+				</h2>
+				<p class="mb-10 lg:w-full lg:text-center">
+					Usar una Inivatción Digital tiene beneficios en todos los
+					sentidos, ecologicos, económicos, gestionables, etc
+				</p>
+
+				<CardBenefit
+					title="Ecológioco"
+					content="Uno de los beneficios más lindos y reponsables, es el hecho de ayudar al medio ambiente con Invitaciones Digitales al no tener la necesidad de recurrir a los antigüos procesos de impresión."
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 text-primary-400 mr-2"
+						slot="svg-icon"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
+						></path>
+					</svg>
+				</CardBenefit>
+
+				<CardBenefit
+					title="Fácil y rápido"
+					content="Olvida los procesos complicados y tardados de encontrar un diseñador, mandar cambios, encontrar imprenta, mandar a imprimir, hazlo ahora y deste tu celular."
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-8 h-8 text-primary-400 mr-2"
+						slot="svg-icon"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+						></path>
+					</svg>
+				</CardBenefit>
+			</article>
+			<div>image</div>
+		</section>
+
+		<section
+			class="container py-5 px-5 lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+		>
+			<h3 class="text-secondd-950 mb-5 lg:text-center">
+				Opiniones Invitación Digital
+			</h3>
+			<div class="lg:flex lg:justify-between">
+				<CardReview
+					couple="Adriana y Hector"
+					review="Nos fascino nuestra invitación, fue muy fácil de hacer, bastante económica versus las propuestas del método tradicional. Super recomendable!"
+				/>
+				<CardReview
+					couple="Daniela y Daniel"
+					review="El tiempo se nos vino encima, no teníamos tiempo de iniciar un proceso de Invitación Tradicional, y entonces llegamos a esta solución, Fantastico nos encanto la facilidad y rapidez."
+				/>
+			</div>
+
+			<div>
+				<h3 class="text-secondd-950 mb-5 lg:mt-14">
+					Preguntas Frecuentes
+				</h3>
+				<p class="mb-5">
+					Las dudas y preguntas acerca de la Invitación Digital son
+					muchas, pero Wedding Invites te resuelve todas.
+				</p>
+
+				<FaqItem
+					question="¿Cuánto cuesta una Invitación Digital?"
+					answer="Wedding Invites cuenta con planes, debido a esto los costos serán dependiendo de tus necesidades, sin embargo puedes empezar de forma gratuita ahora mismo."
+					view="1"
+				/>
+
+				<FaqItem
+					question="¿Necesito una tarjeta de crédito?"
+					answer="..."
+				/>
+
+				<FaqItem
+					question="¿En cuánto tiempo obtengo mi Invitación Digital?"
+					answer="..."
+				/>
+			</div>
+		</section>
+	</section>
+</Layout>

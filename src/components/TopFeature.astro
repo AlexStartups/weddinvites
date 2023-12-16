@@ -1,0 +1,23 @@
+---
+interface Props {
+    thumb: string;
+    title: string;
+    content: string;
+}
+
+const { thumb, title, content } = Astro.props;
+---
+
+<div class="flex">
+    <div class="hidden lg:block lg:w-1/2">
+        <img src={thumb} alt="" />
+    </div>
+    <article
+        class="bg-secondd-600 rounded-md text-center py-5 px-5 border-2 border-brand2-900 lg:w-1/2"
+    >
+        <h3 class="uppercase mb-3">{title}</h3>
+        <p class="text-white">
+            {content}
+        </p>
+    </article>
+</div>
