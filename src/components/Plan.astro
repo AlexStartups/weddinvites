@@ -1,18 +1,18 @@
 ---
 interface Props {
-    name: string;
-    pricing: string;
-    label: string;
+  name: string;
+  pricing: string;
+  label: string;
 }
 
 const { name, pricing, label } = Astro.props;
 ---
 
 <div
-    class="bg-secondd-100 border-solid border-2 border-secondd-300 py-5 px-5 rounded-md mb-6 md:w-[48%]"
+  class="bg-secondd-100 border-solid border-2 border-secondd-300 py-5 px-5 rounded-md mb-6 md:w-[48%]"
 >
-    <h3 class="text-secondd-500 uppercase mb-0">{name}</h3>
-    <b class="text-5xl mb-2 block text-secondd-950">${pricing}</b>
-    <span class="block mb-5 text-secondd-700 font-bold text-sm">{label}</span>
-    <slot name="includes" />
+  <h3 class="text-secondd-500 uppercase mb-0">{name}</h3>
+  <b class="text-5xl mb-2 block text-secondd-950">${pricing}</b>
+  <span class="block mb-5 text-secondd-700 font-bold text-sm">{label}</span>
+  <slot name="includes" />
 </div>

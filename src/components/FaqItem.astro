@@ -1,8 +1,8 @@
 ---
 interface Props {
-    question: string;
-    answer: string;
-    view?: number;
+  question: string;
+  answer: string;
+  view?: number;
 }
 
 const { question, answer, view = 0 } = Astro.props;
@@ -10,23 +10,23 @@ const answerClass = view == 0 ? "hidden" : "";
 ---
 
 <div class="border-b-2 border-secondd-200">
-    <div class="flex py-5">
-        <h5 class="block w-5/6 text-secondd-500">{question}</h5>
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 w-1/6"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 4.5v15m7.5-7.5h-15"></path>
-        </svg>
-    </div>
-    <p class:list={["italic", "mb-5", "text-gray-600", answerClass]}>
-        {answer}
-    </p>
+  <div class="flex py-5">
+    <h5 class="block w-5/6 text-secondd-500">{question}</h5>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 4.5v15m7.5-7.5h-15"></path>
+    </svg>
+  </div>
+  <p class:list={["italic", "mb-5", "text-gray-600", answerClass]}>
+    {answer}
+  </p>
 </div>
