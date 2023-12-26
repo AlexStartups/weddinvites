@@ -1,16 +1,16 @@
 ---
 interface Props {
-    title: string;
-    content: string;
+  title: string;
+  content: string;
 }
 
 const { title, content } = Astro.props;
 ---
 
-<div class="mb-10 md:w-[48.5%]">
-    <div class="flex mb-3">
-        <slot name="svg-icon" />
-        <h4 class="text-secondd-500">{title}</h4>
-    </div>
-    <p>{content}</p>
+<div class="mb-10 md:w-[48.5%]" slot="highlight">
+  <div class="flex mb-3">
+    <slot name="svg-icon" />
+    <h4 class="text-secondd-500">{title}</h4>
+  </div>
+  <p set:html={content} />
 </div>
