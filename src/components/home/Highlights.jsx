@@ -26,16 +26,16 @@ export default function Highlights({deviceType}){
         <Carousel
         swipeable={true}
         draggable={true}
-        showDots={false}
+        showDots={true}
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
         infinite={true}
-        autoPlay={true}
+        autoPlay={false}
         autoPlaySpeed={5000}
         keyBoardControl={true}
         transitionDuration={1000}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
         deviceType={deviceType}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
