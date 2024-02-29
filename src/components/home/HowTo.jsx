@@ -3,9 +3,10 @@ import * as pkg from '@material-tailwind/react'
 const {Stepper, Step, Button, Typography} = pkg
 
 import {
-    CogIcon,
     UserIcon,
-    BuildingLibraryIcon,
+    PhotoIcon,
+    DocumentTextIcon,
+    ChatBubbleLeftEllipsisIcon ,
 } from "@heroicons/react/24/outline"
    
 export default function HowTo() {
@@ -41,7 +42,7 @@ export default function HowTo() {
                 </div>
                 </Step>
                 <Step onClick={() => setActiveStep(1)}>
-                <CogIcon className="h-8 w-8" />
+                <PhotoIcon className="h-8 w-8" />
                 <div className="absolute -bottom-[4.5rem] w-max text-center">
                     <Typography
                     variant="h6"
@@ -58,7 +59,7 @@ export default function HowTo() {
                 </div>
                 </Step>
                 <Step onClick={() => setActiveStep(2)}>
-                    <BuildingLibraryIcon className="h-8 w-8" />
+                    <DocumentTextIcon className="h-8 w-8" />
                     <div className="absolute -bottom-[4.5rem] w-max text-center">
                         <Typography
                         variant="h6"
@@ -75,7 +76,7 @@ export default function HowTo() {
                     </div>
                 </Step>
                 <Step onClick={() => setActiveStep(3)}>
-                    <BuildingLibraryIcon className="h-8 w-8" />
+                    <ChatBubbleLeftEllipsisIcon  className="h-8 w-8" />
                     <div className="absolute -bottom-[4.5rem] w-max text-center">
                         <Typography
                         variant="h6"
@@ -87,7 +88,7 @@ export default function HowTo() {
                         color={activeStep === 2 ? "blue-gray" : "gray"}
                         className="font-normal"
                         >
-                        Compartela con todos tus invitados.
+                        Pública en línea y envía.
                         </Typography>
                     </div>
                 </Step>
