@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Faqs from "../components/home/Faqs";
+---
+
+<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+    <section
+        class="container py-5 px-5 md:flex md:flex-wrap md:justify-between md:mx-auto lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+    >
+        <article class="mb-10 lg:text-center xl:w-full xl:text-center">
+            <h1 class="text-secondd-950 uppercase text-4xl lg:text-5xl">
+                Preguntas Frecuentes
+            </h1>
+            <p class="mt-5">
+                Las dudas y preguntas acerca de la Invitación Digital son
+                muchas, pero Wedding Invites te resuelve todas.
+            </p>
+        </article>
+
+        <Faqs client:only="react" />
+    </section>
+</Layout>

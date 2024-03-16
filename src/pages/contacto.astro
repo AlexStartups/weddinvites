@@ -1,9 +1,49 @@
 ---
+export const prerender = true;
+
+if (Astro.request.method === "POST") {
+    try {
+        const data = await Astro.request.formData();
+
+        const contact = {
+            name: data.get("inloveName"),
+            email: data.get("inloveEmail"),
+            phone: data.get("inlovePhone"),
+            date: data.get("inloveDate"),
+            plan: data.get("inlovePlan"),
+            message: data.get("inloveComments"),
+            contacted: new Date(),
+        };
+
+        fetch("https://www.creativoapp.com/App/Handlers/Wedding.php", {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(contact),
+        })
+            .then((response) => {
+                // return response.text(); // returns text that can used as html
+                return response.json(); // returns json object
+            })
+            .then((res) => {
+                console.log(res);
+            })
+            .catch(function (err) {
+                console.log("Failed to fetch page: ", err);
+            });
+    } catch (error) {
+        if (error instanceof Error) {
+            console.error(error.message);
+        }
+    }
+}
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Diseña tu Invitación Digital | Wedding Invites">
-    <section class="container py-5 px-5 lg:m-auto lg:w-11/12">
+<Layout title="Wedding Digital Invitation Contact us | Wedding Invites">
+    <section class="container py-5 px-5 md:mx-auto lg:m-auto lg:w-11/12">
         <article class="mb-10 lg:text-center">
             <h1 class="text-secondd-950 uppercase">CONTACTANOS</h1>
             <p>
@@ -48,6 +88,7 @@ import Layout from "../layouts/Layout.astro";
 
         <form
             action=""
+            method="POST"
             class="py-5 px-5 rounded-md mb-10 border-solid border-2 border-gray-100 shadow-xl lg:flex lg:flex-wrap"
         >
             <fieldset class="block mb-5 lg:w-1/2 lg:px-3">

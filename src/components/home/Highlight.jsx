@@ -1,11 +1,11 @@
-export const Highlight = ({title, content}) => {
-    const htmlContent = {__html:content};
+export const Highlight = ({ title, content }) => {
+    const htmlContent = { __html: content };
 
     return (
         <div className="mb-10 px-5">
-            
+
             <div className="flex flex-col items-center justify-center mb-3">
-               {/*  <svg
+                {/*  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -23,10 +23,10 @@ export const Highlight = ({title, content}) => {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-primary-400 mr-2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
                 </svg>
-                <h4 className="text-secondd-500 text-center my-5">{ title }</h4>
+                <h4 className="text-secondd-500 text-center my-5 uppercase">{title}</h4>
                 <p className="text-center" dangerouslySetInnerHTML={htmlContent} />
             </div>
-            
+
         </div>
     )
 }
