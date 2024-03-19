@@ -1,3 +1,49 @@
+---
+import { navigate } from "astro:transitions/client";
+import { LangSelector } from "../components/header/LangSelector";
+const { languagesList, currentLang } = Astro.props
+
+const navigation = {
+  "es": [
+    {
+      label: "Planes",
+      link: "/planes"
+    },
+    {
+      label: "Características",
+      link: "/caracteristicas"
+    },
+    {
+      label: "Wedding Planners",
+      link: "/wedding-planer"
+    },
+    {
+      label: "Contacto",
+      link: "/contacto"
+    }
+  ],
+  "en": [
+    {
+      label: "Plans",
+      link: "/en/plans"
+    },
+    {
+      label: "Features",
+      link: "/en/features"
+    },
+    {
+      label: "Wedding Planners",
+      link: "/en/wedding-planer"
+    },
+    {
+      label: "Contact",
+      link: "/en/contact"
+    }
+  ]
+}
+
+const currentNav = navigation[currentLang]
+---
 <header class="lg:bg-secondd-300">
   <div
     class="flex flex-col relative lg:mx-auto lg:flex-row xl:w-11/12 xl:m-auto"
@@ -5,7 +51,7 @@
     <div
       class="w-full bg-secondd-300 py-1 px-5 flex justify-between items-center lg:w-1/4 lg:bg-transparent"
     >
-      <a href="/"
+      <a href={currentLang === "en" ? "/en" : "/" }
         ><img src="/wedding-invites.png" class="w-1/3 lg:w-1/2" alt="" /></a
       >
       <a class="lg:hidden" id="nav"
@@ -32,13 +78,17 @@
       class="w-full bg-secondd-700 py-5 px-5 absolute top-0 overflow-visible z-[900] hidden lg:block lg:w-3/4 lg:relative lg:bg-transparent"
       id="nav-list"
     >
+      <LangSelector langs={languagesList} currentLang={currentLang} client:only="react" />
       <ul
         class="flex flex-col text-white lg:flex-row lg:justify-end lg:items-center lg:h-full lg:space-x-5 lg:text-black"
       >
-        <li>
-          <a href="/planes" class="lg:text-xl">Planes</a>
-        </li>
-        <li>
+        {currentNav.map(({label, link}) => (
+          <li>
+            <a href={link} class="lg:text-xl">{label}</a>
+          </li>
+        ))}
+        
+        <!-- <li>
           <a href="/caracteristicas" class="lg:text-xl">Características</a>
         </li>
         <li>
@@ -47,7 +97,8 @@
         <li>
           <a href="/contacto" class="lg:text-xl">Contacto</a>
         </li>
-        <!-- <li>
+        
+        <li>
                     <a
                         href="planes"
                         class="block bg-secondd-700 text-white w-1/2 px-5 py-3 font-bold rounded-md text-center lg:text-xl lg:w-full"
