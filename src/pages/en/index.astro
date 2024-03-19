@@ -1,12 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Plan from "../components/Plan.astro";
-import CardHow from "../components/CardHow.astro";
-import CardBenefit from "../components/CardBenefit.astro";
-import CardReview from "../components/CardReview.astro";
-import Faqs from "../components/home/Faqs";
-import HowTo from "../components/home/HowTo";
-import Highlights from "../components/home/Highlights";
+import Layout from "../../layouts/Layout.astro";
+import Plan from "../../components/Plan.astro";
+import CardHow from "../../components/CardHow.astro";
+import CardBenefit from "../../components/CardBenefit.astro";
+import CardReview from "../../components/CardReview.astro";
+import Faqs from "../../components/home/Faqs";
+import HowTo from "../../components/home/HowTo";
+import Highlights from "../../components/home/Highlights";
 ---
 
 <Layout title="Diseña tu Invitación Digital | Wedding Invites">
@@ -18,13 +18,11 @@ import Highlights from "../components/home/Highlights";
       <div
         class="absolute top-0 flex flex-col justify-center align-middle w-full h-full"
       >
-        <h1
-          class="block text-center leading-normal mb-14 text-white font-paris md:text-[3.75rem] lg:mb-1"
-        >
-          ¡Bienvenidos a Weddinvites!
+        <h1 class="block text-center leading-normal mb-14 text-white font-paris md:text-[3.75rem] lg:mb-1">
+          Welcome to Weddinvites!
         </h1>
         <p class="text-2xl text-center pt-5 md:text-white md:text-3xl md:w-11/12 mx-auto">
-          El destino perfecto para transformar tus invitaciones de boda en experiencias digitales únicas.
+          The perfect destination to transform your wedding invitations into unique digital experiences.
         </p>
       </div>
     </section>
@@ -36,41 +34,21 @@ import Highlights from "../components/home/Highlights";
         class="bg-secondd-600 rounded-md mb-6 md:w-full lg:w-1/4 flex items-center justify-center"
       >
         <h2 class="w-min text-white uppercase text-[2rem]">
-          Invitaciones digitales para celebraciones inolvidables
+          Digital Invitations for Unforgettable Celebrations
         </h2>
       </article>
       <article class="mb-6 px-4 md:w-full md:pr-2 lg:w-3/4">
         <p class="mb-3">
-          Descubre la magia de nuestras <strong
-            >invitaciones digitales para bodas</strong
-          >, diseñadas para cautivar tus sentidos y reflejar tu historia de amor
-          de manera única. En Weddinvites, la creatividad es nuestro sello
-          distintivo.
+          Discover the magic of our digital wedding invitations, designed to captivate your senses and reflect your love story uniquely. At Weddinvites, creativity is our distinctive hallmark.
         </p>
         <p class="mb-3">
-          Imagina tu boda con invitaciones que van más allá de lo convencional.
-          Enamórate de nuestras creaciones, desde las clásicas hasta las más
-          vanguardistas. Ofrecemos el diseño de <strong
-            >invitaciones digitales para bodas</strong
-          > que captura la esencia de tu amor.
+          Imagine your wedding with invitations that go beyond the conventional. Fall in love with our creations, from classic to cutting-edge. We offer digital wedding invitation design that captures the essence of your love.
         </p>
         <p class="mb-3">
-          Relájate con la comodidad de nuestras <strong
-            >invitaciones electrónicas de boda</strong
-          >. En un mundo acelerado, Weddinvites te ofrece una solución fácil de
-          usar, accesible en cualquier momento y lugar. Simplifica tu proceso de
-          envío de invitaciones y da el primer paso hacia una boda inolvidable.
+          Discover the convenience of our electronic wedding invitations. In a fast-paced world, Weddinvites offers you an easy-to-use solution, accessible anytime, anywhere. Simplify your invitation-sending process and take the first step toward an unforgettable wedding.
         </p>
         <p>
-          En Weddinvites, nos apasiona ofrecer <strong
-            >invitaciones virtuales para bodas</strong
-          > de la más alta calidad. Nuestro compromiso con el <strong
-            >diseño elegante</strong
-          > y la atención meticulosa a los detalles nos posiciona como líderes en
-          el mercado de <strong
-            >invitaciones digitales elegantes para bodas</strong
-          >. Personalizamos cada invitación para reflejar la individualidad de
-          cada pareja.
+          At Weddinvites, we are passionate about offering virtual wedding invitations of the highest quality. Our commitment to elegant design and meticulous attention to detail positions us as leaders in the market for elegant digital wedding invitations. We customize each invitation to reflect the individuality of each couple.
         </p>
       </article>
       <!-- <article class="mb-6 md:w-1/2 md:pr-2 lg:w-[32%]">
@@ -93,24 +71,16 @@ import Highlights from "../components/home/Highlights";
       class="container py-5 px-5 md:flex md:flex-col md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
     >
       <article class="mb-6 lg:text-center xl:w-full xl:text-center">
-        <h2 class="text-secondd-950 uppercase mb-5">Nuestros Planes</h2>
+        <h2 class="text-secondd-950 uppercase mb-5">Our Plans</h2>
         <p class="mb-3">
-          Eleva tu boda a nuevas alturas con nuestras <strong
-            >invitaciones digitales para bodas</strong
-          >. Descubre la magia de Weddinvites y comienza tu viaje hacia una
-          experiencia única de <strong>invitaciones digitales</strong>.
-          Sumérgete en nuestros planes y descubre cómo transformar el camino
-          hacia una boda inolvidable.
+          Elevate your wedding to new heights with our digital wedding invitations. Discover the magic of Weddinvites and start your journey to a unique digital invitation experience.
         </p>
         <p>
-          <strong
-            >¡Haz que tu celebración comience con una invitación que refleje tu
-            estilo y valores!</strong
-          >
+          <strong>Make your celebration starts with an invite that shows your style and values!</strong>
         </p>
       </article>
       <article class="md:flex md:flex-wrap md:justify-around md:items-start">
-        <Plan name="Save the Date" pricing="0" label="Plan gratuito">
+        <Plan name="Save the Date" pricing="0" label="Free plan">
           <ul slot="includes">
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -127,7 +97,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Información de Novios</span>
+              <span>Couple's info</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -144,7 +114,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Fecha y Hora del Evento</span>
+              <span>Event's Date and Time</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -161,7 +131,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Información Ceremonia</span>
+              <span>Ceremony info</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -178,11 +148,11 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Información Recepción</span>
+              <span>Celebration info</span>
             </li>
           </ul>
         </Plan>
-        <Plan name="Plan Amor" pricing="1,399" label="Pruébalo gratis por 15 días">
+        <Plan name="Plan Amor" pricing="1,399" label="Try free for 15 days">
           <ul slot="includes">
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -199,7 +169,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Sección Header</span>
+              <span>Header section</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -216,7 +186,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Información Ceremonia</span>
+              <span>Ceremony info</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -233,7 +203,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Información Recepción</span>
+              <span>Celebration info</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -250,7 +220,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Sección "Confirmar Asistencia"</span>
+              <span>Confirm section</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -267,7 +237,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Sección "Nuestros Padres"</span>
+              <span>Our parent's section</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -284,7 +254,7 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Sección "Cuenta Regresiva"</span>
+              <span>Countdown section</span>
             </li>
             <li class="py-2 border-b-2 border-brand2-100 flex">
               <svg
@@ -301,31 +271,14 @@ import Highlights from "../components/home/Highlights";
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
               </svg>
-              <span>Sección "Dress Code"</span>
-            </li>
-            <li class="py-2 border-b-2 border-brand2-100 flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-500 mr-1"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-              <span>Sección "Consideraciones"</span>
+              <span>Dress code section</span>
             </li>
           </ul>
         </Plan>
         <Plan
           name="Plan Pasión"
           pricing="1,999"
-          label="Pruébalo gratis por 15 días"
+          label="Try free for 15 days"
         >
           <ul slot="includes">
             <li class="py-2 border-b-2 border-brand2-100 flex">
@@ -520,7 +473,7 @@ import Highlights from "../components/home/Highlights";
         <Plan
           name="Plan Eternidad"
           pricing="2,499"
-          label="Pruébalo gratis por 15 días"
+          label="Try free for 15 days"
         >
           <ul slot="includes">
             <li class="py-2 border-b-2 border-brand2-100 flex">
@@ -756,7 +709,7 @@ import Highlights from "../components/home/Highlights";
       <h2
         class="block mt-5 uppercase text-secondd-950 mb-6 lg:w-full lg:text-center"
       >
-        ¿Cómo funciona?
+        How it works?
       </h2>
 
       <HowTo client:only="react" />
@@ -851,14 +804,10 @@ import Highlights from "../components/home/Highlights";
     >
       <article class="md:flex md:flex-wrap md:justify-between">
         <h2 class="text-secondd-950 mb-5 lg:w-full lg:text-center">
-          Beneficios de la Invitación Digital
+          Benefits
         </h2>
         <p class="mb-10 lg:w-full lg:text-center">
-          Te invitamos a explorar los beneficios excepcionales de nuestras <strong
-            >invitaciones digitales para bodas</strong
-          >. Desde la comodidad hasta la sostenibilidad, cada aspecto de nuestro
-          servicio está diseñado para hacer que tu proceso de planificación sea
-          más fácil, único y ecológico.
+          We invite you to explore the exceptional benefits of our digital wedding invitations. From convenience to sustainability, every aspect of our service is designed to make your planning process easier, unique, and eco-friendly.
         </p>
 
         <Highlights client:only="react" deviceType="desktop" />

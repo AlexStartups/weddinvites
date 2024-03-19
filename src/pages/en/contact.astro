@@ -1,0 +1,120 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+    <section class="container py-5 px-5 lg:m-auto lg:w-11/12">
+        <article class="mb-10 lg:text-center">
+            <h1 class="text-secondd-950 uppercase">CONTACT US</h1>
+            <p>Please, fill the following form and tell us about your love story, we want to be part of it.</p>
+        </article>
+        <article class="text-center">
+            <h3>Write to us and follow us</h3>
+            <a
+                href="mailto:love@weddinginvites.com"
+                class="block bg-secondd-700 text-white py-3 px-3 rounded-md font-bold text-xl mt-3 mb-5 shadow-lg duration-300 hover:bg-secondd-800 hover:shadow-xl lg:w-fit lg:px-5 lg:mx-auto"
+                >love@weddinvites.com</a
+            >
+            <div class="flex justify-center space-x-3 mb-10">
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        ><path
+                            fill="#9D6167"
+                            d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"
+                        ></path></svg
+                    >
+                </a>
+                <a href="#">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        ><path
+                            fill="#9D6167"
+                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+                        ></path></svg
+                    >
+                </a>
+            </div>
+        </article>
+
+        <form
+            action=""
+            class="py-5 px-5 rounded-md mb-10 border-solid border-2 border-gray-100 shadow-xl lg:flex lg:flex-wrap"
+        >
+            <fieldset class="block mb-5 lg:w-1/2 lg:px-3">
+                <label for="inloveName" class="text-base text-secondd-700"
+                    >Name</label
+                >
+                <input
+                    type="text"
+                    name="inloveName"
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                />
+            </fieldset>
+            <fieldset class="block mb-5 lg:w-1/2 lg:px-3">
+                <label for="inloveEmail" class="text-base text-secondd-700"
+                    >Email</label
+                >
+                <input
+                    type="text"
+                    name="inloveEmail"
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                />
+            </fieldset>
+            <fieldset class="block mb-5 lg:w-1/2 lg:px-3">
+                <label for="inlovePhone" class="text-base text-secondd-700"
+                    >Phone</label
+                >
+                <input
+                    type="text"
+                    name="inlovePhone"
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                />
+            </fieldset>
+            <fieldset class="block mb-5 lg:w-1/4 lg:px-3">
+                <label for="inloveDate" class="text-base text-secondd-700"
+                    >Wedding Date</label
+                >
+                <input
+                    type="date"
+                    name="inloveDate"
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                />
+            </fieldset>
+            <fieldset class="block mb-5 lg:w-1/4 lg:px-3">
+                <label for="inlovePlan" class="text-base text-secondd-700"
+                    >Plan</label
+                >
+                <select
+                    name="inlovePlan"
+                    id=""
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                >
+                    <option value="Pasion">Plan Pasión</option>
+                    <option value="Amor">Plan Amor</option>
+                    <option value="Lujuria">Plan Personalizado</option>
+                </select>
+            </fieldset>
+            <fieldset class="block mb-5 lg:w-full lg:px-3">
+                <label for="inloveComments" class="text-base text-secondd-700"
+                    >Comments</label
+                >
+                <textarea
+                    rows="3"
+                    name="inloveComments"
+                    class="block w-full py-2 px-3 border-solid border-2 border-secondd-300 rounded-md mt-1 focus:border-secondd-700 focus:outline-none ease-in duration-300"
+                ></textarea>
+            </fieldset>
+            <button
+                class="block bg-secondd-700 text-white px-3 py-3 w-full rounded-md font-bold text-lg duration-300 hover:bg-secondd-800 hover:shadow-xl lg:ml-3 lg:w-fit lg:px-7"
+                >CONTACT</button
+            >
+        </form>
+    </section>
+</Layout>
