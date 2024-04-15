@@ -1,12 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Plan from "../../components/Plan.astro";
-import FaqItem from "../../components/FaqItem.astro";
 ---
 
-<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+<Layout title="Explore Our Digital Invitation Plans - Weddinvites" metaDescription=" Explore our digital wedding invitation plans and choose the option that best suits your needs. Make your wedding day unforgettable with Weddinvites!">
   <section
-    class="container py-5 px-5 md:flex md:flex-wrap md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+    class="container py-5 px-5 md:flex md:flex-wrap md:justify-between md:mx-auto lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
   >
     <article class="mb-6 lg:text-center xl:w-full">
       <h1 class="text-secondd-950 uppercase">Our Plans</h1>
@@ -17,392 +15,16 @@ import FaqItem from "../../components/FaqItem.astro";
         Explore our plans designed to fit your needs and discover how our <strong>digital invitations</strong> can make the planning process easier and more exciting. At Weddinvites, we don't just offer invitations; we create moments that will last a lifetime!
       </p>
     </article>
-    <!-- <Plan name="Plan Amor" pricing="0" label="Plan gratuito">
-      <ul slot="includes">
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Auto gestionable</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Cuenta regresiva</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Invitados</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Ajustes generales</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-secondd-600 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mapa de ubicación</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-secondd-600 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mesa de regalos</span>
-        </li>
-        <li class="py-2 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-secondd-600 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Notificaciones Push</span>
-        </li>
-      </ul>
-    </Plan>
-    <Plan
-      name="Plan Pasión"
-      pricing="1,350"
-      label="Pruébalo gratis por 15 días"
-    >
-      <ul slot="includes">
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Auto gestionable</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Cuenta regresiva</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Invitados</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Ajustes generales</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mapa de ubicación</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mesa de regalos</span>
-        </li>
-        <li class="py-2 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Notificaciones Push</span>
-        </li>
-      </ul>
-    </Plan>
-    <Plan
-      name="Plan Eternidad"
-      pricing="2,350"
-      label="Pruébalo gratis por 15 días"
-    >
-      <ul slot="includes">
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Auto gestionable</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Cuenta regresiva</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Invitados</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Ajustes generales</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mapa de ubicación</span>
-        </li>
-        <li class="py-2 border-b-2 border-brand2-100 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Mesa de regalos</span>
-        </li>
-        <li class="py-2 flex">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 text-primary-500 mr-1"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>Notificaciones Push</span>
-        </li>
-      </ul>
-    </Plan> -->
+
     <article
-      class="mt-5 bg-primary-100 rounded-md py-5 px-5 w-full mb-14 pb-10 text-center"
+      class="mt-5 bg-secondd-50 rounded-md py-5 px-5 w-full mb-14 pb-10 text-center"
     >
-      <h3 class="text-primary-500 uppercase mb-2">I am Wedding Planner</h3>
+      <h4 class="text-secondd-700 uppercase mb-2">I am Wedding Planner</h4>
       <p class="mb-7">
         Are you <b>Wedding Planner</b>? We have a special focused plan for you, like so you can provide a better service through our technology.
       </p>
       <a
-        href="/wedding-planer"
+        href="/en/wedding-planer"
         class="bg-primary-500 text-white py-3 px-5 rounded-md font-bold duration-300 hover:bg-primary-600 hover:shadow-xl"
         >Ask for Plan</a
       >
@@ -414,7 +36,9 @@ import FaqItem from "../../components/FaqItem.astro";
         Discover the innovation with Weddinvites. Our service takes you beyond the conventional, offering a unique experience in <strong>digital wedding invitations</strong>. Immerse yourself in the magic of Weddinvites and embark on a journey that will transform the way you invite your loved ones to your special day.
       </p>
 
-      <table class="min-w-full text-center text-sm font-light mt-12">
+      <table
+        class="min-w-full text-center text-sm font-light mt-12 overflow-x-scroll"
+      >
         <thead class="border-b font-medium dark:border-neutral-500">
           <t>
             <th scope="col" class="px-6 py-2">Feature</th>
@@ -426,7 +50,17 @@ import FaqItem from "../../components/FaqItem.astro";
         </thead>
         <tbody>
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Self-manageable</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start">Price</td>
+            <td class="py-2 px-2">Free</td>
+            <td class="py-2 px-2">139.00</td>
+            <td class="py-2 px-2">169.00</td>
+            <td class="py-2 px-2">189.00</td>
+          </tr>
+
+          <tr class="border-b dark:border-neutral-500">
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Self-manageable</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -494,7 +128,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Choice between predefined designs</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Choose predefined design</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -562,7 +198,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Location map (Google Maps)</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Location map (Google Maps)</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -630,7 +268,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Guest list for invitation sending management</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Guest list for invitation sending management</td
+            >
             <td class="whitespace-nowrap px-6 py-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -698,75 +338,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Customized URLs per guest with a "Confirm" button</td>
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondd-600 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Customized URLs per guest with a "Confirm" button</td
             >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondd-600 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-500 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-500 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-          </tr>
-
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Song suggestions (Spotify playlist)</td>
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -834,75 +408,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Song management (According to the event program)</td>
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondd-600 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Song suggestions (Spotify playlist)</td
             >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-secondd-600 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-500 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-            <td class="py-2 px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6 text-primary-500 m-auto"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg></td
-            >
-          </tr>
-
-          <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Instagram hashtag</td>
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -970,7 +478,149 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Tables management (Assignment)</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Song management (According to the event program)</td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondd-600 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondd-600 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary-500 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary-500 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+          </tr>
+
+          <tr class="border-b dark:border-neutral-500">
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Instagram hashtag</td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondd-600 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-secondd-600 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary-500 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+            <td class="py-2 px-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-primary-500 m-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg></td
+            >
+          </tr>
+
+          <tr class="border-b dark:border-neutral-500">
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Tables management (Assignment)</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1038,7 +688,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Photo upload (Post-event)</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Photo upload (Post-event)</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1106,7 +758,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2 text-start">Push notifications</td>
+            <td class="whitespace-nowrap px-6 py-2 text-start"
+              >Push Notifications</td
+            >
             <td class="py-2 px-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1242,7 +896,9 @@ import FaqItem from "../../components/FaqItem.astro";
           </tr>
 
           <tr class="border-b dark:border-neutral-500">
-            <td class="whitespace-nowrap px-6 py-2">Professional and responsive web design</td>
+            <td class="whitespace-nowrap px-6 py-2"
+              >Professional and responsive web design</td
+            >
             <td class="whitespace-nowrap px-6 py-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

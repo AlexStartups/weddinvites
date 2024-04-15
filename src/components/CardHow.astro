@@ -8,8 +8,8 @@ interface Props {
 const { title, content, icon } = Astro.props;
 ---
 
-<div class="border-2 border-secondd-300 py-5 px-5 rounded-md mb-5 shadow-xl">
-    <img class="w-16 h-16" src={`./${icon}`} />
-    <h5 class="text-secondd-500 uppercase block mt-3">{title}</h5>
-    <p class="mt-0 text-base">{content}</p>
+<div class="flex flex-col justify-around items-center border-2 border-secondd-300 py-5 px-5 rounded-md mb-5 shadow-xl">
+    <img class="w-16 h-16" src={`/${icon}`} />
+    <h5 class="text-secondd-500 uppercase block mt-3 text-center">{title}</h5>
+    <p class="mt-0 text-base text-center">{content}</p>
 </div>

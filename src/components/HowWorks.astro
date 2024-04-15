@@ -1,33 +1,12 @@
 ---
 import CardHow from "../components/CardHow.astro";
 
-const steps = [
-    {
-        step: "Crea una cuenta",
-        summary: "Con un solo par de click.",
-        icon: "usuario.png",
-    },
-    {
-        step: "Elije un template",
-        summary: "Plantillas prediseñadas.",
-        icon: "pantalla-tactil.png",
-    },
-    {
-        step: "Carga tu contenido",
-        summary: "Peronaliza tu invitación digital.",
-        icon: "subiendo.png",
-    },
-    {
-        step: "Comparte",
-        summary: "Publica en linea y comparte.",
-        icon: "buena-resena.png",
-    },
-];
+const { steps } = Astro.props;
 ---
 
 <div class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
     {
-        steps.map((how) => (
+        steps.map((how:any) => (
             <CardHow title={how.step} content={how.summary} icon={how.icon} />
         ))
     }

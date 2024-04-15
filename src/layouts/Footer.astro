@@ -1,3 +1,118 @@
+---
+import React from "react"
+
+const { currentLang } = Astro.props
+
+interface navigation {
+    es: Object
+    en: Object
+}
+
+const navigation = {
+  "es": {
+    info: {
+      email: "love@weddinvites.com",
+      location: "Cancún, Quintana Roo. México",
+      rights: "© 2024 Weddinvites. Todos los derechos reservados."
+    },
+    socialNetworks: [
+      {
+        name: "Facebook",
+        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"#ffffff\" d=\"M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z\"></path></svg>",
+        link: ""
+      },
+      {
+        name: "Instagram",
+        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"#ffffff\" d=\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z\"></path></svg>",
+        link: ""
+      }
+    ],
+    links: [
+      {
+        label: "Invitaciones Digitales",
+        link: "/"
+      },
+      {
+        label: "Planes",
+        link: "/planes"
+      },
+      {
+        label: "Características",
+        link: "/caracteristicas"
+      },
+      {
+        label: "Contacto",
+        link: "/contacto"
+      },
+      {
+        label: "Preguntas Frecuentes",
+        link: "/preguntas-frecuentes"
+      },
+      {
+        label: "Políticas de Privacidad",
+        link: "/politicas-privacidad"
+      },
+      {
+        label: "Wedding Planners",
+        link: "/wedding-planer"
+      },
+      
+    ]
+  },
+  "en": {
+    info: {
+      email: "love@weddinvites.com",
+      location: "Cancun, Quintana Roo. Mexico",
+      rights: "© 2024 Weddinvites. All rights reserved."
+    },
+    socialNetworks: [
+      {
+        name: "Facebook",
+        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"#ffffff\" d=\"M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z\"></path></svg>",
+        link: "https://facebook.com"
+      },
+      {
+        name: "Instagram",
+        icon: "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 24 24\"><path fill=\"#ffffff\" d=\"M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z\"></path></svg>",
+        link: "https://instagram.com"
+      }
+    ],
+    links: [
+      {
+        label: "Digital Invitations",
+        link: "/en"
+      },
+      {
+        label: "Plans",
+        link: "/en/plans"
+      },
+      {
+        label: "Features",
+        link: "/en/features"
+      },
+      {
+        label: "Contact",
+        link: "/en/contact"
+      },
+      {
+        label: "FAQ's",
+        link: "/en/faqs"
+      },
+      {
+        label: "Privacy Politics",
+        link: "/en/privacy-politics"
+      },
+      {
+        label: "Wedding Planners",
+        link: "/en/wedding-planer"
+      }
+    ]
+  }
+}
+
+const currentFooterNav = navigation[currentLang]
+const { info, socialNetworks, links } = currentFooterNav
+---
 <footer class="bg-secondd-300 py-5 px-5">
   <div
     class="container flex flex-col md:mx-auto lg:m-auto lg:flex-row lg:flex-wrap xl:m-auto xl:w-11/12 xl:mt-10"
@@ -20,7 +135,7 @@
             d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
           ></path>
         </svg>
-        <span>love@weddinvites.com</span>
+        <span>{info.email}</span>
       </a>
       <p class="mb-5 flex">
         <svg
@@ -42,22 +157,25 @@
           ></path>
         </svg>
 
-        <span>Cancún, Quintana Roo. México</span>
+        <span>{info.location}</span>
       </p>
       <div class="flex space-x-2">
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 24 24"
-            ><path
-              fill="#ffffff"
-              d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"
-            ></path></svg
-          >
-        </a>
-        <a href="#">
+        {
+          socialNetworks.map((network:any) => {
+            return (
+              <a href={network.link}>
+                {
+                  network.name === "Facebook" ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"></path></svg>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"></path></svg>
+                  )
+                }
+              </a>
+            )
+          })
+        }
+        <!-- <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -68,7 +186,7 @@
               d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
             ></path></svg
           >
-        </a>
+        </a> -->
       </div>
     </div>
 
@@ -77,28 +195,18 @@
       <ul
         class="flex flex-col space-y-2 text-lg text-white mb-5 lg:flex-row lg:flex-wrap"
       >
-        <li class="lg:basis-1/2">
-          <a href="/">Invitaciones Digitales</a>
-        </li>
-        <li class="lg:basis-1/2"><a href="/planes">Planes</a></li>
-        <li class="lg:basis-1/2">
-          <a href="/caracteristicas">Características</a>
-        </li>
-        <li class="lg:basis-1/2"><a href="/">Contacto</a></li>
-        <li class="lg:basis-1/2">
-          <a href="/preguntas-frecuentes">Preguntas Frecuentes</a>
-        </li>
-        <li class="lg:basis-1/2">
-          <a href="/politicas-privacidad">Políticas de Privacidad</a>
-        </li>
-        <li class="lg:basis-1/2">
-          <a href="/wedding-planer">Wedding Planer</a>
-        </li>
+        {
+          links.map((link:any) => (
+            <li class="lg:basis-1/2">
+              <a href={link.link}>{link.label}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
     <div class="lg:w-full">
-      <p class="text-sm">© 2024 Weddinvites. Todos los derechos reservados.</p>
+      <p class="text-sm">{info.rights}</p>
     </div>
   </div>
 </footer>

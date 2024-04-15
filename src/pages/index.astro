@@ -1,16 +1,89 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Plan from "../components/Plan.astro";
-import ItemPlan from "../components/ItemPlan.astro";
-import HowWorks from "../components/HowWorks.astro";
-import CardBenefit from "../components/CardBenefit.astro";
-import CardReview from "../components/CardReview.astro";
-import Faqs from "../components/home/Faqs";
-import HowTo from "../components/home/HowTo";
-import Highlights from "../components/home/Highlights";
+import Layout from '../layouts/Layout.astro'
+import Plan from '../components/Plan.astro'
+import ItemPlan from '../components/ItemPlan.astro'
+import HowWorks from '../components/HowWorks.astro'
+import CardReview from '../components/CardReview.astro'
+import Faqs from '../components/home/Faqs'
+import Highlights from '../components/home/Highlights'
+
+import '../styles/utils.css'
+
+const info = {
+  steps: [
+    {
+      step: "Crea una cuenta",
+      summary: "Con un solo par de click.",
+      icon: "usuario.png",
+    },
+    {
+      step: "Te damos al bienvenida",
+      summary: "Comenzaremos a trabajar contigo",
+      icon: "pantalla-tactil.png",
+    },
+    {
+      step: "Desarollo",
+      summary: "Peronaliza tu invitación digital.",
+      icon: "subiendo.png",
+    },
+    {
+      step: "Comparte",
+      summary: "Publica en linea y comparte.",
+      icon: "buena-resena.png",
+    }
+  ],
+  highlights: [
+    {
+      title: "Conveniencia Moderna",
+      content: "Experimenta la comodidad y ahorro de tiempo con nuestras <strong>invitaciones digitales para bodas</strong>, eliminando la necesidad de trámites físicos y acelerando el proceso de preparativos."
+    },
+    {
+      title: "Gestión de Confirmaciones",
+      content: "Simplifica la planificación con la facilidad de envío y la capacidad de gestionar confirmaciones de asistencia de manera eficiente a través de nuestras <strong>invitaciones electrónicas de boda</strong>."
+    },
+    {
+      title: "Relación Calidad-Precio",
+      content: "Descubre la asequibilidad sin sacrificar calidad. Nuestras <strong>invitaciones digitales</strong> no tienen costos de impresión ni envío, permitiéndote ajustarte a tu presupuesto sin comprometer el estilo."
+    },
+    {
+      title: "Diseño Personalizado Ilimitado",
+      content: "Expresa tu estilo único con nuestra amplia gama de opciones de diseño personalizables. Cada pareja encuentra la invitación perfecta que refleja su personalidad."
+    },
+    {
+      title: "Compromiso con la Sostenibilidad",
+      content: "Celebra tu amor y cuida del planeta. Nuestras <strong>invitaciones digitales</strong> no solo son elegantes, sino también sostenibles, reduciendo el consumo de papel y minimizando el desperdicio."
+    },
+    {
+      title: "Flexibilidad Total",
+      content: "Adapta los detalles de tu boda con facilidad. Nuestras <strong>invitaciones digitales personalizadas</strong> ofrecen flexibilidad total, permitiendo cambios rápidos y actualizaciones según tus necesidades."
+    }
+  ],
+  faqs: [
+    {
+      question: "¿Por qué debería elegir invitaciones digitales en lugar de físicas?",
+      answer: "Las invitaciones digitales ofrecen conveniencia y ahorro de tiempo, perfectas para parejas ocupadas que buscan simplificar su proceso de planificación."
+    },
+    {
+      question: "¿Cómo se comparan los costos de las invitaciones digitales con las físicas?",
+      answer: "Nuestras invitaciones digitales eliminan costos de impresión y envío, ofreciendo una opción más asequible sin comprometer la calidad o el estilo."
+    },
+    {
+      question: "¿Hay limitaciones en el diseño de las invitaciones digitales?",
+      answer: "¡Todo lo contrario! Ofrecemos una amplia gama de opciones de diseño personalizable, permitiendo a las parejas expresar su estilo de manera única."
+    },
+    {
+      question: "¿Cómo contribuyen las invitaciones digitales a la sostenibilidad ambiental?",
+      answer: "Valoramos el medio ambiente. Al elegir invitaciones digitales, estás reduciendo el consumo de papel y contribuyendo a la conservación del entorno."
+    },
+    {
+      question: "¿Puedo realizar cambios de último momento en mis invitaciones digitales?",
+      answer: "Sí, la flexibilidad es clave. Puedes realizar cambios rápidos y sencillos en los detalles de tu boda, brindándote total control sobre tus invitaciones."
+    }
+  ]
+}
 ---
 
-<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+<Layout title="Invitaciones Digitales para Bodas - Weddinvites" metaDescription="Descubre las invitaciones digitales más elegantes y personalizables para tu boda. Encuentra la solución perfecta para tus invitaciones con Weddinvites.">
   <section>
     <section class="relative h-[400px] overflow-hidden lg:h-[550px]">
       <div>
@@ -36,7 +109,7 @@ import Highlights from "../components/home/Highlights";
     </section>
 
     <section
-      class="container py-5 px-5 -mt-5 md:mt-5 md:flex md:flex-wrap md:mx-auto lg:m-auto lg:justify-between lg:mt-10 xl:m-auto xl:w-11/12 xl:mt-10"
+      class="container py-5 px-5 -mt-5 md:mt-5 md:flex md:flex-wrap md:mx-auto md:items-center lg:m-auto lg:justify-between lg:mt-10 xl:m-auto xl:w-11/12 xl:mt-10"
     >
       <article class="mb-6 px-4 lg:w-2/3">
         <h1 class="uppercase text-[2.5rem] text-secondd-800">
@@ -79,7 +152,9 @@ import Highlights from "../components/home/Highlights";
           cada pareja.
         </p>
       </article>
-      <article class="lg:w-1/3"><img src="/bodas-increibles.png" /></article>
+      <article class="lg:w-1/3">
+        <img class="gradient-mask-bottom" src="/bodas-increibles.png" />
+      </article>
     </section>
 
     <section
@@ -105,44 +180,44 @@ import Highlights from "../components/home/Highlights";
       <article class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
         <Plan name="Save the Date" pricing="0" label="Plan gratuito">
           <ul slot="includes">
-            <ItemPlan name="Información de Novios" include="1" />
-            <ItemPlan name="Fecha y Hora del Evento" include="1" />
-            <ItemPlan name="Información de la Ceremonia" include="1" />
-            <ItemPlan name="Información Recepción" include="1" />
-            <ItemPlan name="Acerca de Nuestros Padres" include="0" />
-            <ItemPlan name="Información Dress Code" include="0" />
-            <ItemPlan name="Programa / Itenarario" include="0" />
-            <ItemPlan name="Mesa de Regalos" include="0" />
-            <ItemPlan name="Nuestra Historia" include="0" />
-            <ItemPlan name="Buenos Deseos" include="0" />
+            <ItemPlan name="Información de Novios" include={1} />
+            <ItemPlan name="Fecha y Hora del Evento" include={1} />
+            <ItemPlan name="Información de la Ceremonia" include={1} />
+            <ItemPlan name="Información Recepción" include={1} />
+            <ItemPlan name="Acerca de Nuestros Padres" include={0} />
+            <ItemPlan name="Información Dress Code" include={0} />
+            <ItemPlan name="Programa / Itenarario" include={0} />
+            <ItemPlan name="Mesa de Regalos" include={0} />
+            <ItemPlan name="Nuestra Historia" include={0} />
+            <ItemPlan name="Buenos Deseos" include={0} />
           </ul>
         </Plan>
         <Plan name="Amor" pricing="1,399" label="Pruébalo gratis por 15 días">
           <ul slot="includes">
-            <ItemPlan name="Información de Novios" include="1" />
-            <ItemPlan name="Fecha y Hora del Evento" include="1" />
-            <ItemPlan name="Información de la Ceremonia" include="1" />
-            <ItemPlan name="Información Recepción" include="1" />
-            <ItemPlan name="Acerca de Nuestros Padres" include="1" />
-            <ItemPlan name="Información Dress Code" include="1" />
-            <ItemPlan name="Programa / Itenarario" include="0" />
-            <ItemPlan name="Mesa de Regalos" include="0" />
-            <ItemPlan name="Nuestra Historia" include="0" />
-            <ItemPlan name="Buenos Deseos" include="0" />
+            <ItemPlan name="Información de Novios" include={1} />
+            <ItemPlan name="Fecha y Hora del Evento" include={1} />
+            <ItemPlan name="Información de la Ceremonia" include={1} />
+            <ItemPlan name="Información Recepción" include={1} />
+            <ItemPlan name="Acerca de Nuestros Padres" include={1} />
+            <ItemPlan name="Información Dress Code" include={1} />
+            <ItemPlan name="Programa / Itenarario" include={0} />
+            <ItemPlan name="Mesa de Regalos" include={0} />
+            <ItemPlan name="Nuestra Historia" include={0} />
+            <ItemPlan name="Buenos Deseos" include={0} />
           </ul>
         </Plan>
         <Plan name="Pasión" pricing="1,999" label="Pruébalo gratis por 15 días">
           <ul slot="includes">
-            <ItemPlan name="Información de Novios" include="1" />
-            <ItemPlan name="Fecha y Hora del Evento" include="1" />
-            <ItemPlan name="Información de la Ceremonia" include="1" />
-            <ItemPlan name="Información Recepción" include="1" />
-            <ItemPlan name="Acerca de Nuestros Padres" include="1" />
-            <ItemPlan name="Información Dress Code" include="1" />
-            <ItemPlan name="Programa / Itenarario" include="1" />
-            <ItemPlan name="Mesa de Regalos" include="1" />
-            <ItemPlan name="Nuestra Historia" include="0" />
-            <ItemPlan name="Buenos Deseos" include="0" />
+            <ItemPlan name="Información de Novios" include={1} />
+            <ItemPlan name="Fecha y Hora del Evento" include={1} />
+            <ItemPlan name="Información de la Ceremonia" include={1} />
+            <ItemPlan name="Información Recepción" include={1} />
+            <ItemPlan name="Acerca de Nuestros Padres" include={1} />
+            <ItemPlan name="Información Dress Code" include={1} />
+            <ItemPlan name="Programa / Itenarario" include={1} />
+            <ItemPlan name="Mesa de Regalos" include={1} />
+            <ItemPlan name="Nuestra Historia" include={0} />
+            <ItemPlan name="Buenos Deseos" include={0} />
           </ul>
         </Plan>
         <Plan
@@ -151,16 +226,16 @@ import Highlights from "../components/home/Highlights";
           label="Pruébalo gratis por 15 días"
         >
           <ul slot="includes">
-            <ItemPlan name="Información de Novios" include="1" />
-            <ItemPlan name="Fecha y Hora del Evento" include="1" />
-            <ItemPlan name="Información de la Ceremonia" include="1" />
-            <ItemPlan name="Información Recepción" include="1" />
-            <ItemPlan name="Acerca de Nuestros Padres" include="1" />
-            <ItemPlan name="Información Dress Code" include="1" />
-            <ItemPlan name="Programa / Itenarario" include="1" />
-            <ItemPlan name="Mesa de Regalos" include="1" />
-            <ItemPlan name="Nuestra Historia" include="1" />
-            <ItemPlan name="Buenos Deseos" include="1" />
+            <ItemPlan name="Información de Novios" include={1} />
+            <ItemPlan name="Fecha y Hora del Evento" include={1} />
+            <ItemPlan name="Información de la Ceremonia" include={1} />
+            <ItemPlan name="Información Recepción" include={1} />
+            <ItemPlan name="Acerca de Nuestros Padres" include={1} />
+            <ItemPlan name="Información Dress Code" include={1} />
+            <ItemPlan name="Programa / Itenarario" include={1} />
+            <ItemPlan name="Mesa de Regalos" include={1} />
+            <ItemPlan name="Nuestra Historia" include={1} />
+            <ItemPlan name="Buenos Deseos" include={1} />
           </ul>
         </Plan>
       </article>
@@ -175,7 +250,7 @@ import Highlights from "../components/home/Highlights";
     </h2>
 
     <!-- <HowTo client:only="react" /> -->
-    <HowWorks />
+    <HowWorks steps={info.steps} />
   </section>
 
   <section
@@ -193,7 +268,7 @@ import Highlights from "../components/home/Highlights";
         más fácil, único y ecológico.
       </p>
 
-      <Highlights client:only="react" deviceType="desktop" />
+      <Highlights client:only="react" deviceType="desktop" highlights={info.highlights} />
     </article>
   </section>
 
@@ -227,7 +302,7 @@ import Highlights from "../components/home/Highlights";
         Wedding Invites te resuelve todas.
       </p>
 
-      <Faqs client:only="react" />
+      <Faqs client:only="react" faqs={info.faqs} />
     </div>
   </section>
 </Layout>

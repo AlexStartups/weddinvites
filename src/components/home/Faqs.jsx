@@ -23,20 +23,24 @@ function Icon({ id, open }) {
     );
 }
 
-export default function Faqs() {
+export default function Faqs({faqs}) {
     const [open, setOpen] = useState(0);
    
     const handleOpen = value => setOpen(open === value ? 0 : value);
    
     return (
         <>
-            <Accordion open={open === 1} animate={CUSTOM_ANIMATION} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)} className="text-secondd-500 border-b-2 border-secondd-200 hover:text-secondd-600">¿Por qué debería elegir invitaciones digitales en lugar de físicas?</AccordionHeader>
-                <AccordionBody className="italic mb-5 text-gray-600 answerClass text-lg">
-                    Las invitaciones digitales ofrecen conveniencia y ahorro de tiempo, perfectas para parejas ocupadas que buscan simplificar su proceso de planificación.
-                </AccordionBody>
-            </Accordion>
-            <Accordion open={open === 2} animate={CUSTOM_ANIMATION} icon={<Icon id={2} open={open} />}>
+            {faqs.map((faq, i) => (
+                <Accordion key={i} open={open === i} animate={CUSTOM_ANIMATION} icon={<Icon id={i} open={open} />}>
+                    <AccordionHeader onClick={() => handleOpen(i)} className="text-secondd-500 border-b-2 border-secondd-200 hover:text-secondd-600">
+                        {faq.question}
+                    </AccordionHeader>
+                    <AccordionBody className="italic mb-5 text-gray-600 answerClass text-lg">
+                        {faq.answer}
+                    </AccordionBody>
+                </Accordion>
+            ))}
+            {/* <Accordion open={open === 2} animate={CUSTOM_ANIMATION} icon={<Icon id={2} open={open} />}>
                 <AccordionHeader onClick={() => handleOpen(2)} className="text-secondd-500 border-b-2 border-secondd-200 hover:text-secondd-600">
                     ¿Cómo se comparan los costos de las invitaciones digitales con las físicas?
                 </AccordionHeader>
@@ -67,7 +71,7 @@ export default function Faqs() {
                 <AccordionBody className="italic mb-5 text-gray-600 answerClass text-lg">
                     Sí, la flexibilidad es clave. Puedes realizar cambios rápidos y sencillos en los detalles de tu boda, brindándote total control sobre tus invitaciones.
                 </AccordionBody>
-            </Accordion>
+            </Accordion> */}
         </>
     );
 }

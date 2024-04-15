@@ -1,230 +1,85 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import CardBenefit from "../../components/CardBenefit.astro";
-import TopFeature from "../../components/TopFeature.astro";
+import FeatureCard from "../../components/FeatureCard.astro";
 ---
 
-<Layout title="Diseña tu Invitación Digital | Wedding Invites">
+<Layout title="Features of Our Digital Invitations - Weddinvites" metaDescription="Dive into the unique and amazing features of our digital wedding invitations. Simplify your planning process with Weddinvites." >
   <section
-    class="container py-5 px-5 md:flex md:flex-wrap md:justify-between lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
+    class="container py-5 px-5 md:flex md:flex-wrap md:justify-between md:mx-auto lg:m-auto xl:m-auto xl:w-11/12 xl:mt-10"
   >
-    <article class="mb-20 lg:text-center xl:w-full xl:text-center">
+    <article class="mb-10 lg:text-center xl:w-full xl:text-center">
       <h1 class="text-secondd-950 uppercase text-4xl lg:text-5xl">
-        CARACTERISTICAS
+        FEATURES
       </h1>
       <p class="mt-5">
-        Los beneficios de una <b>Invitación Digital</b> son infinitos; Sería
-        imposible ilustrarte cada uno de ellos pero resumimos de la mejor manera
-        las siguientes características
+        The benefits of a <b>Digital Invitation</b> are endless; it would be impossible to illustrate each one of them, but we summarize the following features in the best way.
       </p>
     </article>
 
-    <div class="mb-10 lg:flex lg:space-x-3">
-      <CardBenefit
-        title="Fácil"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Rápido"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Ecológico"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
-          ></path>
-        </svg>
-      </CardBenefit>
-    </div>
-
-    <div class="flex flex-col space-y-8 mb-10">
-      <TopFeature
-        title="Auto Gestionable"
-        content="Lorem ipsum dolor sit amet, consectetur adipisicing  elit. Rem atque porro corrupti voluptatum velit nobis dignissimos excepturi quibusdam eligendi. Veniam sed harum perferendis aspernatur voluptates quaerat? Praesentium perferendis modi atque?"
-        thumb="/feature-demo.svg"
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3 mb-10">
+      <FeatureCard
+        title="Easy"
+        content="Ease of use is one of the hallmarks of technology, and that's exactly what we do; it's really easy."
+        icon="/buena-resena.png"
       />
-
-      <TopFeature
-        title="Gestión de Invitados"
-        content="Lorem ipsum dolor sit amet, consectetur adipisicing  elit. Rem atque porro corrupti voluptatum velit nobis dignissimos excepturi quibusdam eligendi. Veniam sed harum perferendis aspernatur voluptates quaerat? Praesentium perferendis modi atque?"
-        thumb="/feature-demo.svg"
+      <FeatureCard
+        title="Fast"
+        content="Everything happens in real-time, there are no intermediaries or authorization processes, just load and view."
+        icon="/subiendo.png"
       />
-
-      <TopFeature
-        title="Mesa de Regalo"
-        content="Lorem ipsum dolor sit amet, consectetur adipisicing  elit. Rem atque porro corrupti voluptatum velit nobis dignissimos excepturi quibusdam eligendi. Veniam sed harum perferendis aspernatur voluptates quaerat? Praesentium perferendis modi atque?"
-        thumb="/feature-demo.svg"
+      <FeatureCard
+        title="Eco Friendly"
+        content="Striving for zero paper, no matter what ideology you pursue, zero paper is surely the perfect plan for an invitation."
+        icon="/pantalla-tactil.png"
       />
     </div>
 
-    <div class="lg:flex lg:space-x-3">
-      <CardBenefit
-        title="Fácil"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Rápido"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Ecológico"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
-          ></path>
-        </svg>
-      </CardBenefit>
+    <article class="w-full text-center mb-20">
+      <h3 class="text-secondd-500 mb-5 uppercase">Self-Managed</h3>
+      <p class="text-center lg:w-[80%] lg:mx-auto">
+          Forget about time-consuming manual processes, stop sending and requesting changes for your invitation that take hours or days to reflect, and instead manage your invitation in a personalized way whenever and wherever you want.
+      </p>
+      <img
+        src="/auto-gestionable.jpg"
+        alt=""
+        class="mx-auto mt-10 shadow-xl rounded-md border-2 border-secondd-300 lg:w-2/3"
+      />
+    </article>
+
+    <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 mb-20">
+      <article class="text-center mb-10">
+        <h4 class="text-secondd-500 mb-5 uppercase">Custom Design</h4>
+        <p>
+            Use your colors, fonts, images, and customize your invitation with personalized designs to give it that unique touch that a wedding invitation must have.
+        </p>
+        <img
+          src="/diseno-personalizado.jpg"
+          alt=""
+          class="mx-auto mt-10 shadow-xl rounded-md border-2 border-secondd-300 lg:w-2/3"
+        />
+      </article>
+      <article class="text-center mb-10">
+        <h4 class="text-secondd-500 mb-5 uppercase">Unlimited Changes</h4>
+        <p>
+            Make as many changes as you need to your digital invitation, without restrictions or usage fees, modify and share your invitation as many times as you need.
+        </p>
+        <img
+          src="/auto-gestionable.jpg"
+          alt=""
+          class="mx-auto mt-10 shadow-xl rounded-md border-2 border-secondd-300 lg:w-2/3"
+        />
+      </article>
     </div>
-    <div class="lg:flex lg:space-x-3">
-      <CardBenefit
-        title="Fácil"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Rápido"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          ></path>
-        </svg>
-      </CardBenefit>
-      <CardBenefit
-        title="Ecológico"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim tenetur, asperiores consectetur laboriosam dolore nisi error aliquid neque! Culpa mollitia nisi quia a officiis odit ullam ipsum, tempora maxime suscipit?"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8 text-primary-400 mr-2"
-          slot="svg-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"
-          ></path>
-        </svg>
-      </CardBenefit>
+
+    <div class="w-full text-center">
+      <h4 class="text-secondd-500 mb-5 uppercase">And Much More...</h4>
+      <p class="lg:w-[80%] lg:mx-auto">
+          The myriad of features and benefits of a digital invitation make it impossible to find any negative aspects to our solution where everything is a benefit.
+      </p>
+
+      <div>
+        <img src="/more-features.png" alt="" class="mx-auto" />
+      </div>
     </div>
   </section>
 </Layout>

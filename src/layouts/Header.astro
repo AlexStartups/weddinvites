@@ -74,39 +74,41 @@ const currentNav = navigation[currentLang]
         </svg></a
       >
     </div>
-    <nav
-      class="w-full bg-secondd-700 py-5 px-5 absolute top-0 overflow-visible z-[900] hidden lg:block lg:w-3/4 lg:relative lg:bg-transparent"
-      id="nav-list"
-    >
+    <div class="w-full bg-secondd-700 py-5 px-5 absolute top-0 overflow-visible z-[900] hidden lg:block lg:w-3/4 lg:relative lg:bg-transparent">
       <LangSelector langs={languagesList} currentLang={currentLang} client:only="react" />
-      <ul
-        class="flex flex-col text-white lg:flex-row lg:justify-end lg:items-center lg:h-full lg:space-x-5 lg:text-black"
+      <nav
+        id="nav-list"
+        class="mt-5"
       >
-        {currentNav.map(({label, link}) => (
-          <li>
-            <a href={link} class="lg:text-xl">{label}</a>
+        <ul
+          class="flex flex-col text-white lg:flex-row lg:justify-end lg:items-center lg:h-full lg:space-x-5 lg:text-black"
+        >
+          {currentNav.map(({label, link}) => (
+            <li>
+              <a href={link} class="lg:text-xl">{label}</a>
+            </li>
+          ))}
+          
+          <!-- <li>
+            <a href="/caracteristicas" class="lg:text-xl">Características</a>
           </li>
-        ))}
-        
-        <!-- <li>
-          <a href="/caracteristicas" class="lg:text-xl">Características</a>
-        </li>
-        <li>
-          <a href="/wedding-planer" class="lg:text-xl">Wedding Planer</a>
-        </li>
-        <li>
-          <a href="/contacto" class="lg:text-xl">Contacto</a>
-        </li>
-        
-        <li>
-                    <a
-                        href="planes"
-                        class="block bg-secondd-700 text-white w-1/2 px-5 py-3 font-bold rounded-md text-center lg:text-xl lg:w-full"
-                        >Crear Invitación</a
-                    >
-                </li> -->
-      </ul>
-    </nav>
+          <li>
+            <a href="/wedding-planer" class="lg:text-xl">Wedding Planer</a>
+          </li>
+          <li>
+            <a href="/contacto" class="lg:text-xl">Contacto</a>
+          </li>
+          
+          <li>
+                      <a
+                          href="planes"
+                          class="block bg-secondd-700 text-white w-1/2 px-5 py-3 font-bold rounded-md text-center lg:text-xl lg:w-full"
+                          >Crear Invitación</a
+                      >
+                  </li> -->
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 <script>

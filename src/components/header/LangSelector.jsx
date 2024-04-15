@@ -1,7 +1,8 @@
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
-import { getRelativeLocaleUrl } from 'astro:i18n';
+import { getRelativeLocaleUrl } from 'astro:i18n'
+import { FLAGS_ICONS } from '../../helpers/flagsIcons.jsx'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -15,14 +16,14 @@ export const LangSelector = ({langs, currentLang}) => {
       {({ open }) => (
         <>
           {/* <Listbox.Label className="block text-sm font-medium leading-6 text-gray-900">Assigned to</Listbox.Label> */}
-          <div className="relative mt-2">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">
+          <div className="relative text-right">
+            <Listbox.Button className="relative w-full bg-white cursor-default rounded-md py-1.5 pl-2 pr-10 text-right text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6 md:w-max">
               <span className="flex items-center">
-                {/* <img src={selected.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" /> */}
-                <span className="ml-3 block truncate">{selected}</span>
+                {FLAGS_ICONS[currentLang]}
+                <span className="ml-1 block">{ selected }</span>
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
-                <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                <ChevronUpDownIcon className="h-5 w-5 text-gray-900" aria-hidden="true" />
               </span>
             </Listbox.Button>
 
@@ -33,9 +34,10 @@ export const LangSelector = ({langs, currentLang}) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-                {langs.map((lang) => (
+              <Listbox.Options className="absolute right-0 z-10 bg-white mt-1 max-h-56 w-max overflow-auto rounded-md py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                {langs.map((lang, i) => (
                   <Listbox.Option
+                    key={i}
                     className={({ active }) =>
                       classNames(
                         active ? 'bg-indigo-600 text-white' : 'text-gray-900',
@@ -47,9 +49,9 @@ export const LangSelector = ({langs, currentLang}) => {
                     {({ selected, active }) => (
                       <>
                         <div className="flex items-center">
-                          {/* <img src={person.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" /> */}
+                          {FLAGS_ICONS[lang]}
                           <span
-                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-3 block truncate')}
+                            className={classNames(selected ? 'font-semibold' : 'font-normal', 'ml-1 block')}
                           >
                             <a href={getRelativeLocaleUrl(lang, '')}>{lang}</a>
                           </span>
